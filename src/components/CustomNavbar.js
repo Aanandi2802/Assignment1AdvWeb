@@ -1,23 +1,23 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function CustomNavbar() {
   return (
     <div>
-        <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">ClassMate</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/courses">Courses</Nav.Link>
-            <Nav.Link href="/mapp">Mapping</Nav.Link>
-            <Nav.Link href="/approve">Approve</Nav.Link>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="/">ClassMate</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/courses">Courses</Nav.Link>
+              <Nav.Link href="/mapp">Mapping</Nav.Link>
+              <Nav.Link href="/approve">Approve</Nav.Link>
 
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -28,12 +28,12 @@ function CustomNavbar() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown> */}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
-  )
+  );
 }
 
-export default CustomNavbar
+export default CustomNavbar;
